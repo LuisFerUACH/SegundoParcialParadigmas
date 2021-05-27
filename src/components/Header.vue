@@ -5,7 +5,7 @@
     <div id="logo">
       <img src="../assets/images/logo.png" class="app-logo" alt="Logotipo" />
       <span id="brand">
-        <strong>Segundo</strong> Parcial
+        <strong>Segundo Parcial</strong> 
       </span>
     </div>
 

@@ -2,6 +2,7 @@
   <div id="app">
     <Header></Header>
     <Slider></Slider>
+    <Sidebar></Sidebar>
     <div class="center">
         <router-view></router-view>
         <div class="clearfix"></div>
@@ -15,14 +16,18 @@
 import Header from './components/Header.vue'
 import Slider from './components/Slider.vue'
 import Footer from './components/Footer.vue'
+import Sidebar from './components/Sidebar.vue'
+
+
 
 export default {
   name: 'App',
   components: {
     Header,
     Slider,
+    Sidebar,
     Footer
-  }
+  },
 }
 </script>
 

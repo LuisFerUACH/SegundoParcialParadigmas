@@ -30,7 +30,7 @@ body {
 
 #logo {
     width: 30%;
-    font-size: 30px;
+    font-size: 28px;
     float: left;
     margin-top: 35px;
 }
@@ -120,10 +120,10 @@ body {
     background: white;
     color:rgb(88, 88, 88);
     padding: 10px;
-    width: 100px;
+    width: 200px;
     height: 35px;
     margin: 0px auto;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     text-shadow: none;
     text-decoration: none;
