@@ -150,10 +150,9 @@ body {
 }
 
 #content{
-    width: 70%;
+    width: 80%;
     float:left;
-    min-height: 650px;
-    margin-right: 20px;
+
 }
 
 #sidebar{

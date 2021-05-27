@@ -1,16 +1,17 @@
 <template>
-  <div id="app">
-    <Header></Header>
-    <Slider></Slider>
-    <Sidebar2></Sidebar2>
-    <Sidebar></Sidebar>
-    <div class="center">
-        <router-view></router-view>
-        <div class="clearfix"></div>
-    </div>
+<div id="app">
+  <Header></Header>
+  <Slider></Slider>
 
-    <Footer></Footer>
+  <Sidebar></Sidebar>
+  <Sidebar2></Sidebar2>
+  <div class="center">
+    <router-view></router-view>
+    <div class="clearfix"></div>
   </div>
+
+  <Footer></Footer>
+</div>
 </template>
 
 <script>
@@ -30,6 +31,7 @@ export default {
     Sidebar2,
     Footer
   },
+
 }
 </script>
 
