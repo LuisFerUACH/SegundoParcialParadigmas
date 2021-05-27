@@ -3,24 +3,23 @@
   <div id="content">
 <center><h2 class="subheader"> Registrar nuevo libro</h2></center>
       <form @submit.prevent="estatusEditar ? updateTodo() : addTodo()">
-          <p>
-            <input type="text" v-model="name">
-            <button type="submit">{{ estatusEditar ? "Editar": "Agregar" }}</button>
-            <button v-if="estatusEditar" @click="estatusEditar= false, name='' ">Cancelar</button>
-          </p>
+
+
+            <h2>Titulo</h2>
+            <input type="text" v-model="titulo">
+            <h2>Autor</h2>
+            <input type="text" v-model="autor">
+            <center><button class="btn btn-success" type="submit">{{ estatusEditar ? "Editar": "Agregar" }}</button></center>
+            <div class="alert alert-success">
+                <strong>Se ha registrado correctamente!</strong>
+                <br>"{{titulo}}" por {{autor}}
+              </div>
+
       </form>
 
-      <img src="https://pa1.narvii.com/6707/510b0daee67fbc091f14b9d8ef40aeb6c0d4dc7d_hq.gif" v-if="cargando">
 
-      {{estatusEditar}}
 
-      <ul>
-        <li v-for="todo in todos" :key="todo.id">
-              {{todo.name}} -
-                <button @click="deleteTodo(todo)">Eliminar</button>
-                <button @click="selectTodo(todo)">Editar</button>
-        </li>
-      </ul>
+
 
   </div>
 </template>
@@ -34,7 +33,8 @@ export default {
     return {
       todos: [],
       id: "",
-      name: "",
+      titulo: "",
+      autor: "",
       cargando: false,
       estatusEditar: false
     }
@@ -57,10 +57,12 @@ export default {
     async addTodo() {
         await db.collection('todos').add(
           {
-            name:  this.name
+            titulo:  this.titulo,
+            autor:  this.autor
           }
         )
-        this.name = "";
+        this.titi = "";
+        this.autor = "";
         this.listarTodos();
     },
     async deleteTodo(todo){
@@ -79,13 +81,15 @@ export default {
     async updateTodo(){
       await db.collection('todos').doc(this.id).set(
         {
-          name: this.name
+          titulo: this.titulo,
+          autor: this.autor
         }
       )
 
       this.estatusEditar = false;
       this.id = "";
-      this.name = "";
+      this.titulo = "";
+      this.autor = "";
       this.listarTodos();
 
     }

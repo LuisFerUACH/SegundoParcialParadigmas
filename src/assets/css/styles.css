@@ -157,13 +157,17 @@ body {
 }
 
 #sidebar{
-    width: 25%;
+    width: 20%;
     float:left;
+}
+#sidebar2{
+    width: 20%;
+    float:right;
 }
 
 .sidebar-item{
     background: #f7f7f7;
-    padding: 20px;
+    padding: 10px;
     margin-top: 30px;
 }
 
@@ -208,7 +212,26 @@ body {
     width: 50%;
     margin: 0px auto;
 }
+input[type=text], select {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 1px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
 
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 .mid-form label{
     display: block;
     float:left;
@@ -220,7 +243,7 @@ body {
 
 input[type="text"],
 textarea{
-    width: 100%;
+    width: 80%;
     min-height: 30px;
     border: 1px solid #ccc;
     padding: 3px;
@@ -375,7 +398,26 @@ textarea{
         float:none;
         width: 100%;
     }
-
+    .alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+.alert-success .alert-link {
+  color: #2b542c;
+}
+.glyphicon-alert:before {
+  content: "\e209";
+}
     #sidebar{
         float:none;
         width: 60%;

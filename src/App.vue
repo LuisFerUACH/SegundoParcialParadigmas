@@ -2,6 +2,7 @@
   <div id="app">
     <Header></Header>
     <Slider></Slider>
+    <Sidebar2></Sidebar2>
     <Sidebar></Sidebar>
     <div class="center">
         <router-view></router-view>
@@ -17,7 +18,7 @@ import Header from './components/Header.vue'
 import Slider from './components/Slider.vue'
 import Footer from './components/Footer.vue'
 import Sidebar from './components/Sidebar.vue'
-
+import Sidebar2 from './components/Sidebar2.vue'
 
 
 export default {
@@ -26,6 +27,7 @@ export default {
     Header,
     Slider,
     Sidebar,
+    Sidebar2,
     Footer
   },
 }
