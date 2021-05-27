@@ -13,19 +13,19 @@
     <nav id="menu">
       <ul>
         <li>
-          <a href="index.html">Inicio</a>
+          <a href="home">Inicio</a>
         </li>
         <li>
-          <a href="blog.html">Listado</a>
+          <a href="lista">Listado</a>
         </li>
         <li>
-          <a href="formulario.html">Añadir</a>
+          <a href="agregar">Añadir</a>
         </li>
         <li>
-          <a href="#">Editar</a>
+          <a href="editar">Editar</a>
         </li>
         <li>
-          <a href="#">Eliminar</a>
+          <a href="eliminar">Eliminar</a>
         </li>
       </ul>
     </nav>

@@ -2,6 +2,11 @@
   <div id="app">
     <Header></Header>
     <Slider></Slider>
+    <div class="center">
+        <router-view></router-view>
+        <div class="clearfix"></div>
+    </div>
+
     <Footer></Footer>
   </div>
 </template>
